@@ -1,0 +1,24 @@
+{
+    "name": "arstechnica.com",
+    "url": "arstechnica.com",
+    "stamp": 1470889961,
+    "author": "cwmke",
+    "match": "arstechnica.com",
+    "config": {
+        "type": "xpath",
+        "multipage": {
+            "xpath": "span[@class='numbers']\/a",
+            "append": true,
+            "recursive": true
+        },
+        "xpath": [
+            "section[@class='article-guts']"
+        ],
+        "cleanup": [
+            "figcaption",
+            "aside",
+            "div[@class='article-expander']",
+            "nav"
+        ]
+    }
+}
